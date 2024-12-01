@@ -1,0 +1,311 @@
+/* Base styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    right: 0px;
+  }
+
+  body::-webkit-scrollbar {
+    visibility:hidden;
+    transition: 9s;
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .container nav {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    top: 0px;
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .container li {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+ 
+  .about-section-img{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-section-img img {
+    width: 70%;
+    border-radius: 20px;
+  }
+  .logo img {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Sans-serif';
+    color: #333;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    width: fit-content;
+    border-radius: 50px;
+  }
+  
+  /* Header styling */
+  .hero-section {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #1E1E1E;
+    background-color: #282828;
+    
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  nav ul li a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: white;
+  }
+  /* Profile Circle and Welcome Message */
+  .profile-circle {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 5px solid gold; */
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .profile-circle:hover {
+    width: 152px;
+    height: 152px;
+    cursor: pointer;
+  }
+  .profile-circle:active{
+    cursor: progress;
+  }
+
+  
+  .profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #CCCCCC;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    color: gold;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 50px 0;
+  }
+  
+  .about-section, .skills-section, .contact-section {
+    background-color: #2A2A2A;
+    padding: 80px 0;
+    text-align: center;
+  }
+  .about-section  p{
+    font-size: 25px;
+    display: flex;
+    color: #CCCCCC;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+    text-align: start;
+    align-items: start;
+  }
+  .skills-icons {
+    display: flex;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: gold;
+  }
+  
+  
+  /* Projects Section - Cards Design */
+  .projects-section {
+    background-color: #1E1E1E;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    transition-delay: 0.1s;
+  }
+  .project-card:hover .project-image {
+    translate: -y 10px;
+  }
+
+  .project-card .project-image {
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+    
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(103, 97, 97, 0.5);
+  }
+  
+  .project-card h3 {
+    font-size: 1.8em;
+    color: gold;
+   
+  }
+  
+  .project-card p {
+    font-size: 1em;
+    color: #CCCCCC;
+  }
+  .project-card a {
+    text-decoration: none;
+    color: blue;
+    position: absolute;
+    bottom: 8px;
+    left: 40%;
+
+  }
+  .project-card a:hover {
+    text-decoration: none;
+    color: navy;
+    
+  }
+  .project-card a:hover .progect-card {
+    background-color: #7c1d1d;
+  }
+  
+  .project-card a:active {
+    color: rgb(7, 7, 209);
+  }
+
+  .project-technologies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .project-technologies img {
+    justify-content: space-between;
+    
+  }
+
+  /* Contact Section */
+  .contact-section p {
+    font-size: 1.5em;
+    color: gold;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: start;
+    margin-top: 5px;
+  }
+  #social-icons-names {
+    display: flex;
+    flex-direction: column;
+    margin-left: -30px;
+    
+  }
+  #social-icons-names li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin:33px;
+    color: gold;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: start;
+    font-size: 30px;
+  }
+  
+  .social-icons li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 15px;
+    margin:30px;
+    border-radius: 30px;
+    /* background-color: #2A2A2A; */
+  }
+  
+  .social-icons a {
+    color: gold;
+    font-size: 1.8em;
+  }
+  .social-icons a:hover{
+    color: goldenrod;
+  }
+  
+  .project-image img {
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  .project-technologies img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills-icons img {
+    width: 40px;
+    margin: 5px;
+    margin: 40px;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1E1E1E;
+    color: gold;
+  }
